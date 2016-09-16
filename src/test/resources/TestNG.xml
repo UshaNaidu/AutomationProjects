@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--  @Parameter - 'environment' can be - "local","grid" "  -->
+<!--  @Parameter - 'browser' can be - "firefox","chrome" ,"ie"  -->
+<!--  @Parameter - 'os' can be - "windows 7" -->
+
+<suite name="GOAVM Automation Suite" parallel="classes" thread-count="2">
+<!-- <suite name="KalKomey Automation Suite" > -->
+
+	<parameter name="environment" value="local"/>
+	<parameter name="browser" value="chrome"/>
+	<parameter name="os" value="windows 7"/>
+	
+	<test name="GOAVM Automation Run on Chrome"> 
+	    <classes>	           
+	       
+	          <!-- Test Scripts for Login Scenarios -->
+	          
+	         <class name="products.CM.LoginTest">
+	         	<methods>
+	         		<include name="ValidEmailBlankPassword"/>
+	         		<!-- <include name="InvalidEmailInvalidPassword"/> -->
+	         		<include name="BlankEmailBlankPassword"/>
+	         		<include name="ValidLogin"/>	         		
+				</methods>
+	         </class>	 
+	                  	        	         
+	       <!-- Test Scripts for Product Functionality Scenarios -->
+	          
+	        <!--  <class name="products.CM.ProductsTest">
+	         	<methods>
+	         		<include name="ProductFunctionality"/>	         		         		
+				</methods>
+	         </class>	  -->  
+	    </classes>
+	    
+	    
+ 	</test> 
+  
+</suite> 

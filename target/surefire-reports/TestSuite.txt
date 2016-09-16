@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 68.984 sec <<< FAILURE! - in TestSuite
+setup(products.CM.LoginTest)  Time elapsed: 68.595 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 62.41 seconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Usha_Naidu', ip: '192.168.60.119', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at products.CM.LoginTest.setup(LoginTest.java:30)
+

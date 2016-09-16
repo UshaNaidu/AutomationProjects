@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [GOAVM Automation Suite]" parallel="classes">
+  <parameter name="os" value="windows 7"/>
+  <parameter name="environment" value="local"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="GOAVM Automation Run on Chrome(failed)" parallel="classes">
+    <classes>
+      <class name="products.CM.LoginTest">
+        <methods>
+          <include name="ValidLogin"/>
+          <include name="ValidEmailBlankPassword"/>
+          <include name="BlankEmailBlankPassword"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- products.CM.LoginTest -->
+    </classes>
+  </test> <!-- GOAVM Automation Run on Chrome(failed) -->
+</suite> <!-- Failed suite [GOAVM Automation Suite] -->
