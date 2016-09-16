@@ -14,7 +14,7 @@ public class LoginPage
 	public LoginPage(WebDriver driver)   // ttmjhsyjhyt
 	{	 
         this.driver = driver;
- 
+ //n in oj
         //This initElements method will create all WebElements
         //PageFactory.initElements(driver, this);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 15), this);
